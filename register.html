@@ -4,6 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Register - Ereteti Dairy Sacco</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -24,24 +28,24 @@
 
   <main>
     <h2>Ereteti Sacco</h2>
-    <form>
-      <label>Full Name</label>
-      <input type="text" required><br>
+    <form action="#" method="post">
+      <label for="full-name">Full Name</label>
+      <input type="text" id="full-name" name="full-name" autocomplete="name" required><br>
 
-      <label>ID Number</label>
-      <input type="text" required><br>
+      <label for="id-number">ID Number</label>
+      <input type="text" id="id-number" name="id-number" autocomplete="off" required><br>
 
-      <label>Phone</label>
-      <input type="tel" required><br>
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" autocomplete="tel" required><br>
 
-      <label>Email</label>
-      <input type="email" required><br>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" autocomplete="email" required><br>
 
-      <label>Password</label>
-      <input type="password" required><br>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" autocomplete="new-password" required><br>
 
-      <label>Confirm Password</label>
-      <input type="password" required><br>
+      <label for="confirm-password">Confirm Password</label>
+      <input type="password" id="confirm-password" name="confirm-password" autocomplete="new-password" required><br>
 
       <button type="submit">Register</button>
     </form>

@@ -126,6 +126,30 @@ button {
   border-top: 4px solid #D8A22B;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
+nav a:hover {
+  color: #D8A22B;
+}
+
+:focus-visible {
+  outline: 3px solid #D8A22B;
+  outline-offset: 2px;
+}
+
+input, select {
+  border: 1px solid #c9c2ad;
+  border-radius: 0.25rem;
+  width: 100%;
+  max-width: 24rem;
+}
+
+button:hover {
+  background: #17592f;
+}
+
 .table-scroll {
   overflow-x: auto;
 }
