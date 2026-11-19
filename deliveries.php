@@ -69,6 +69,29 @@ if ($count === 0) {
     </div>
 
     <p>Joseph Kamau's morning load failed the alcohol test and was rejected, so it is not counted in the day's accepted total. A rejected load is still listed: a rejected load is recorded, never deleted, because the farmer has a right to see what happened to their milk.</p>
+
+    <section>
+      <h2>Record a delivery</h2>
+      <form id="delivery-form">
+        <label for="member">Member number</label>
+        <input type="text" id="member" name="member" placeholder="ER-0001" required>
+        <p class="message" id="member-message"></p>
+
+        <label for="litres">Litres</label>
+        <input type="number" id="litres" name="litres" step="0.01" min="0" required>
+        <p class="message" id="litres-message"></p>
+
+        <label for="session">Session</label>
+        <select id="session" name="session" required>
+          <option value="">Choose a session</option>
+          <option value="MORNING">Morning</option>
+          <option value="EVENING">Evening</option>
+        </select>
+
+        <button type="submit">Record delivery</button>
+        <p class="message" id="form-message"></p>
+      </form>
+    </section>
   </main>
 
 <?php include 'includes/footer.php'; ?>

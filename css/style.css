@@ -173,3 +173,13 @@ button:hover {
     flex-direction: column;
   }
 }
+/* Lab 3: the two rules the script switches on and off */
+.message {
+  color: #B3261E;
+  min-height: 1.5em;
+  margin: 0.25rem 0 0.75rem;
+}
+
+input.invalid {
+  border: 2px solid #B3261E;
+}
